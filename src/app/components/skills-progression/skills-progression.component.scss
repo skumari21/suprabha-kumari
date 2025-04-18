@@ -1,0 +1,132 @@
+.progress-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 1rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSlideUp 0.8s ease forwards;
+    animation-delay: 0.2s;
+  
+    .progress-circle {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      transition: transform 0.3s ease;
+  
+      svg {
+        width: 100px;
+        height: 100px;
+        transform: rotate(-90deg);
+  
+        .bg {
+          fill: none;
+          stroke: #333;
+          stroke-width: 3;
+        }
+  
+        .bar {
+          fill: none;
+          stroke: #ff5e57;
+          stroke-width: 3;
+          stroke-linecap: round;
+          stroke-dasharray: 0 100;
+          animation: fillProgress 1.2s ease-out forwards;
+        }
+  
+        .percentage-text {
+          fill: #ff5e57;
+          font-size: 0.3rem;
+          text-anchor: middle;
+          dominant-baseline: middle;
+          transform: rotate(90deg);
+        }
+      }
+  
+      img {
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        top: 36px;
+        left: 36px;
+      }
+    }
+  
+    .progress-circle:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 10px #ff5e57;
+    }
+  
+    .skill-label {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      text-align: center;
+      transition: color 0.3s ease;
+    }
+  
+    @media (max-width: 768px) {
+      .progress-circle {
+        width: 80px;
+        height: 80px;
+  
+        svg {
+          width: 80px;
+          height: 80px;
+        }
+  
+        img {
+          width: 22px;
+          height: 22px;
+          top: 29px;
+          left: 29px;
+        }
+      }
+  
+      .skill-label {
+        font-size: 0.8rem;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .progress-circle {
+        width: 70px;
+        height: 70px;
+  
+        svg {
+          width: 70px;
+          height: 70px;
+        }
+  
+        img {
+          width: 20px;
+          height: 20px;
+          top: 25px;
+          left: 25px;
+        }
+      }
+  
+      .skill-label {
+        font-size: 0.75rem;
+      }
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeSlideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fillProgress {
+    from {
+      stroke-dasharray: 0 100;
+    }
+    to {
+      stroke-dasharray: 70 100;
+    }
+  }
+  

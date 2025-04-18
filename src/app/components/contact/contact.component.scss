@@ -1,0 +1,134 @@
+.contact-container {
+  background-color: black;
+  color: #fff;
+  padding: 60px 30px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+    color: #aaa;
+    margin-bottom: 2.5rem;
+  }
+
+  form {
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-bottom: 20px;
+
+      input,
+      select,
+      textarea {
+        background-color: #222;
+        border: none;
+        padding: 12px 15px;
+        border-radius: 6px;
+        color: #fff;
+        font-size: 0.95rem;
+
+        &::placeholder {
+          color: #888;
+        }
+      }
+
+      textarea {
+        min-height: 120px;
+        resize: vertical;
+      }
+    }
+
+    button {
+      padding: 10px 24px;
+      background: transparent;
+      border: 1px solid #ccc;
+      color: #fff;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #fff;
+        color: #111;
+      }
+    }
+  }
+}
+
+.social-icons {
+  margin-top: 2rem;
+
+  a {
+    margin: 0 10px;
+    color: #ccc;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+/* Tablet responsiveness */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 40px 20px;
+
+    h2 {
+      font-size: 1.75rem;
+    }
+
+    .subtitle {
+      font-size: 0.9rem;
+    }
+
+    form {
+      .form-grid {
+        gap: 15px;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 30px 15px;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    .subtitle {
+      font-size: 0.85rem;
+    }
+
+    form {
+      .form-grid {
+        grid-template-columns: 1fr;
+
+        input,
+        select,
+        textarea {
+          font-size: 0.9rem;
+        }
+      }
+
+      button {
+        font-size: 0.95rem;
+      }
+    }
+  }
+}

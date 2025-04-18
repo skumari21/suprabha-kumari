@@ -1,0 +1,21 @@
+<div class="modal-backdrop" *ngIf="open">
+  <div class="modal-content">
+    <button class="close-btn" (click)="close()">×</button>
+    <p>Here are a few certifications I've earned in my journey so far.</p>
+    <div *ngIf="!showSlideshow" class="certs-grid">
+      <div *ngFor="let cert of certificates; let i = index" class="cert-card min-w-[150px]" (click)="openSlideshow(i)">
+        <img [src]="cert.thumbnail" alt="Certificate {{ i + 1 }}" />
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="showSlideshow" class="slideshow-backdrop">
+  <div class="certificates-panel">
+    <img [src]="certificates[currentIndex].full" class="certificate-image" />
+    <div class="mt-4 flex gap-4">
+      <button (click)="prev()" class="universal-btn" style="margin-right:5px;">← Prev</button>
+      <button (click)="next()" class="universal-btn" style="margin-right:5px;">Next →</button>
+      <button (click)="closeSlideshow()" class="universal-btn">Back to Gallery</button>
+    </div>
+  </div>
+</div>

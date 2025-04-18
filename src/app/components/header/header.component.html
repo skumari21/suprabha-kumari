@@ -1,0 +1,35 @@
+<section class="navbar">
+  <nav>
+    <img src="../../assets/images/blacklogo.png" alt="suprabha" class="logo" />
+    <div class="hamburger" (click)="toggleMobileMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links" [class.open]="isMobileMenuOpen">
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#my-skills">Skills</a></li>
+      <li><a href="#my-work">Personal Projects</a></li>
+      <li><a (click)="toggleCerts()" href="#">Certificates</a></li>
+      <li><a href="#contact-me">Contact me</a></li>
+    </ul>
+    <app-certificates [open]="showCerts" (onClose)="toggleCerts()"></app-certificates>
+  </nav>
+
+  <!-- Hero content starts -->
+  <div class="hero">
+    <div class="hero-left">
+      <h1>Hi, <br /> I’m <span class="highlight">Suprabha Kumari</span></h1>
+      <button class="universal-btn" (click)="scrollToSection('about-me')">
+        More about me <span>&rarr;</span>
+      </button>
+    </div>
+
+    <div class="hero-right">
+      <h2>I’m IT Consultant<br /> and <br />Software Engineer.</h2>
+      <a class="download" href="../../assets/suprabhakumari.pdf" download>
+        Download CV <i class="fa fa-download"></i>
+      </a>
+    </div>
+  </div>
+</section>

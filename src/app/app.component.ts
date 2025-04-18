@@ -1,12 +1,29 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
+import { HeaderComponent } from "./components/header/header.component";
+import { FooterComponent } from "./components/footer/footer.component";
+import { AboutMeComponent } from "./components/about-me/about-me.component";
+import { SkillsComponent } from "./components/skills/skills.component";
+import { MyWorkComponent } from "./components/my-work/my-work.component";
+import { WorkExperienceComponent } from "./components/work-experience/work-experience.component";
+import { EducationComponent } from "./components/education/education.component";
 import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss'],
+  imports: [CommonModule, HeaderComponent, FooterComponent, AboutMeComponent, SkillsComponent, WorkExperienceComponent, MyWorkComponent]
 })
 export class AppComponent {
-  title = 'suprabha-kumari';
+  showBackToTop = false;
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.showBackToTop = window.pageYOffset > 300;
+  }
+
+  scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }

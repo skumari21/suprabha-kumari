@@ -1,0 +1,19 @@
+<div class="work-experience-container">
+    <h2>Work Experience</h2>
+  
+    <div class="experience-card" *ngFor="let exp of experiences">
+      <div class="experience-header">
+        <div>
+          <h3>{{ exp.company }}</h3>
+          <p class="role">Role: {{ exp.role }}</p>
+        </div>
+        <span class="duration">{{ exp.duration }}</span>
+      </div>
+  
+      <ul>
+        <li *ngFor="let point of exp.responsibilities">{{ point }}</li>
+      </ul>
+    </div>
+  </div>
+  <app-education></app-education>
+  <app-contact></app-contact>

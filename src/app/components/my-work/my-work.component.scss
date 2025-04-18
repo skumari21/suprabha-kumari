@@ -1,0 +1,66 @@
+.my-work {
+  padding: 60px 20px;
+  width: 100%;
+  text-align: center;
+  background: #121212;
+
+  h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #444;
+    padding-bottom: 8px;
+  }
+
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    animation: fadeSlideUp 1s ease forwards;
+
+    app-project-card {
+      flex: 1 1 300px;
+      max-width: 350px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+  }
+}
+
+/* Animations */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .my-work h2 {
+    font-size: 1.6rem;
+  }
+
+  .projects {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .my-work {
+    padding: 40px 10px;
+
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    .projects {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

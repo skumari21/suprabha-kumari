@@ -1,0 +1,25 @@
+<div class="skills-wrapper" id="my-skills">
+    <div>
+        <h2>Skills</h2>
+    </div>
+    <div class="skills-container">
+        <br />
+        <app-skills-progression *ngFor="let skill of skills" [percentage]="skill.percent" [label]="skill.name"
+            [icon]="skill.icon">
+        </app-skills-progression>
+    </div>
+    <div class="details">
+        <div class="tags">           
+            <span class="tag">SaaS</span>
+            <span class="tag">Leadership</span>
+            <span class="tag">JavaScript </span>
+            <span class="tag">Python</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Java</span>
+            <span class="tag">Angular</span>
+            <span class="tag">Spring Boot</span>
+            <span class="tag">Git</span>
+        </div>
+    </div>
+
+</div>

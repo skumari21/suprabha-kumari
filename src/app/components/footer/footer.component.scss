@@ -1,0 +1,68 @@
+.footer-container {
+  background-color: #121212;
+  color: #ccc;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+
+  .logo {
+    font-weight: bold;
+    color: #ff5e57;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+
+  .social-icons {
+    margin: 15px 0;
+  }
+
+  hr {
+    margin: 20px auto;
+    width: 80%;
+    border: 0.5px solid #333;
+  }
+
+  .copyright {
+    font-size: 0.85rem;
+    color: #777;
+    margin-top: 15px;
+  }
+}
+
+/* Tablet responsiveness */
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 35px 20px;
+
+    .logo {
+      font-size: 1.2rem;
+    }
+
+    hr {
+      width: 70%;
+    }
+
+    .copyright {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 30px 15px;
+
+    .logo {
+      font-size: 1rem;
+    }
+
+    hr {
+      width: 60%;
+    }
+
+    .copyright {
+      font-size: 0.85rem;
+    }
+  }
+}
