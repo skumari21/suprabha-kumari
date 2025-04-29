@@ -34,7 +34,7 @@ export class MyWorkComponent {
   BPdesc = 'InsightLens is a conceptual SaaS solution designed to help project managers seamlessly gather, analyze, and translate customer feedback into actionable user stories. The tool bridges the gap between customer voice and product development by leveraging structured feedback loops and intelligent tagging mechanisms. It aims to reduce communication gaps, prioritize features based on user sentiment, and accelerate decision-making in agile environments.';
   BPSolutionLabel = 'InsightLens Business Plan Report';
   BPSolution = 'assets/projects/BusinessPlanReport.pdf';
-  BPTechStack = 'onceptual | UX Design | Agile Product Strategy';
+  BPTechStack = 'Conceptual | UX Design | Agile Product Strategy';
   BPoutcome='InsightLens is a feedback intelligence platform designed for agile teams. It empowers project managers to make informed decisions by turning raw customer feedback into clear, prioritized user stories—bridging the gap between users and development with data-driven insights.';
   BPRole='Consultant';
 }

@@ -28,8 +28,11 @@ export class HeaderComponent {
     this.showContactModal = false;
   }
 
-  toggleCerts() {
-    this.showCerts = !this.showCerts;
+  openCerts() {
+    this.showCerts = true;
+  }
+  closeCerts() {
+    this.showCerts = false;
   }
   scrollToSection(sectionId: string) {
     const element = document.getElementById(sectionId);

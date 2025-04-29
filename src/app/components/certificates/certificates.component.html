@@ -1,7 +1,7 @@
 <div class="modal-backdrop" *ngIf="open">
   <div class="modal-content">
     <button class="close-btn" (click)="close()">×</button>
-    <p>Here are a few certifications I've earned in my journey so far.</p>
+    <p>Here are a few certifications I've earned in my journey so far:</p>
     <div *ngIf="!showSlideshow" class="certs-grid">
       <div *ngFor="let cert of certificates; let i = index" class="cert-card min-w-[150px]" (click)="openSlideshow(i)">
         <img [src]="cert.thumbnail" alt="Certificate {{ i + 1 }}" />

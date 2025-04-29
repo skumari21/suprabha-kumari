@@ -10,10 +10,10 @@
       <li><a href="#about-me">About Me</a></li>
       <li><a href="#my-skills">Skills</a></li>
       <li><a href="#my-work">Personal Projects</a></li>
-      <li><a (click)="toggleCerts()" href="#">Certificates</a></li>
+      <li><a (click)="openCerts(); $event.preventDefault()" href="#">Certificates</a></li>
       <li><a href="#contact-me">Contact me</a></li>
     </ul>
-    <app-certificates [open]="showCerts" (onClose)="toggleCerts()"></app-certificates>
+    <app-certificates [open]="showCerts" (onClose)="closeCerts()"></app-certificates>
   </nav>
 
   <!-- Hero content starts -->
@@ -26,7 +26,7 @@
     </div>
 
     <div class="hero-right">
-      <h2>I’m IT Consultant<br /> and <br />Software Engineer.</h2>
+      <h2>An IT Consultant<br /> and <br />Software Engineer.</h2>
       <a class="download" href="../../assets/suprabhakumari.pdf" download>
         Download CV <i class="fa fa-download"></i>
       </a>
