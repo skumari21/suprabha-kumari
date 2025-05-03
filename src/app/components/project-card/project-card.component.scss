@@ -1,18 +1,18 @@
 .project-card {
-  background-color: #444;
+  background-color: #ffffff;
   /* Darker card background */
-  color: #d0d0d0;
+  color: #1E1E1E;
   padding: 20px;
   border-radius: 8px;
   width: 300px;
   text-align: left;
-  border: 1px solid #ff5e57;
-  box-shadow: 0 0 10px rgb(255, 94, 87);
+  border: 1px solid #E63946;
+  box-shadow: 0 0 10px #D62828;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card h3 {
-  color: #ffffff;
+  color: #E63946;
   margin-bottom: 10px;
 }
 
@@ -21,13 +21,13 @@
 }
 
 a {
-  color: #ff5e57;
+  color: #457B9D;
   word-wrap: normal;
 }
 
 .project-card:hover {
   transform: scale(1.02);
-  box-shadow: 0 0 20px #ff5e57;
+  box-shadow: 0 0 20px #E63946;
   transition: all 0.3s ease;
 }
 

@@ -1,28 +1,28 @@
 .work-experience-container {
   padding: 3rem 2rem;
   margin-top: 4rem;
-  background-color: #0f0f0f;
-  color: #ffffff;
+  background-color: #F9F9F9;
+  color: #1E1E1E;
 
   h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
     text-align: center;
-    border-bottom: 2px solid #444;
+    border-bottom: 2px solid #DDDDDD;
     padding-bottom: 0.5rem;
   }
 
   .experience-card {
-    background-color: #1e1e1e;
+    background-color: #ffffff;
     border-radius: 1rem;
     padding: 2rem;
     margin-bottom: 2rem;
-    box-shadow: 0 0 10px rgb(255, 94, 87);
+    box-shadow: 0 0 10px #E63946;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
       transform: translateY(-5px) scale(1.01);
-      box-shadow: 0 8px 20px rgb(255, 94, 87);
+      box-shadow: 0 8px 20px #D62828;
     }
 
     .experience-header {
@@ -34,20 +34,19 @@
 
       h3 {
         font-size: 1.4rem;
-        color: #ff5e57;
+        color: #E63946;
         margin: 0;
       }
 
       .role {
         font-weight: 500;
-        font-style: italic;
         font-size: 1rem;
-        color: #ccc;
+        color: #555555;
       }
 
       .duration {
         font-size: 0.9rem;
-        color: #aaa;
+        color: #555555;
       }
     }
 
@@ -62,7 +61,7 @@
 
         &::before {
           content: '•';
-          color: #ff5e57;
+          color: #E63946;
           position: absolute;
           left: -1rem;
         }

@@ -1,14 +1,15 @@
 .timeline-container {
   padding: 2rem;
-  background-color: #0f0f0f;
-  color: #ffffff;
+  background-color: #F9F9F9;
+  color: #1E1E1E;
 
   h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
-    border-bottom: 2px solid #444;
+    border-bottom: 2px solid #DDDDDD;
     padding-bottom: 0.5rem;
     text-align: center;
+    color: #1E1E1E;
   }
 
   .timeline {
@@ -37,13 +38,13 @@
         top: 8px;
         width: 16px;
         height: 16px;
-        background-color: #ff5e57;
+        background-color: #E63946;
         border-radius: 50%;
-        border: 2px solid #fff;
+        border: 2px solid #DDDDDD;
       }
 
       .timeline-content {
-        background: #1e1e1e;
+        background: #ffffff;
         padding: 1rem;
         border-radius: 0.5rem;
         box-shadow: 0 0 10px rgb(255, 94, 87);
@@ -52,7 +53,7 @@
         h3 {
           margin: 0 0 0.3rem;
           font-size: 1.2rem;
-          color: #ff5e57;
+          color: #E63946;
         }
 
         p {
@@ -62,15 +63,15 @@
 
         .date {
           font-size: 0.85rem;
-          color: #aaa;
+          color: #555555;
           margin-top: 0.5rem;
           display: block;
         }
 
         &:hover {
           transform: translateY(-5px) scale(1.02);
-          box-shadow: 0 8px 20px rgb(255, 94, 87);
-          background-color: #232323;
+          box-shadow: 0 8px 20px #E63946;
+          background-color: #ffffff;
         }
       }
     }

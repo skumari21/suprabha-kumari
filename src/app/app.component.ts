@@ -5,15 +5,14 @@ import { AboutMeComponent } from "./components/about-me/about-me.component";
 import { SkillsComponent } from "./components/skills/skills.component";
 import { MyWorkComponent } from "./components/my-work/my-work.component";
 import { WorkExperienceComponent } from "./components/work-experience/work-experience.component";
-import { EducationComponent } from "./components/education/education.component";
-import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { HeroComponent } from "./components/hero/hero.component";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  imports: [CommonModule, HeaderComponent, FooterComponent, AboutMeComponent, SkillsComponent, WorkExperienceComponent, MyWorkComponent]
+  imports: [CommonModule, HeaderComponent, FooterComponent, AboutMeComponent, SkillsComponent, WorkExperienceComponent, MyWorkComponent, HeroComponent]
 })
 export class AppComponent {
   showBackToTop = false;

@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    color: #555555;
     font-family: 'Segoe UI', sans-serif;
     margin: 1rem;
     opacity: 0;
@@ -22,14 +22,14 @@
         transform: rotate(-90deg);
   
         .bg {
-          fill: none;
-          stroke: #333;
+          fill: #E63946;
+          stroke: #E63946;
           stroke-width: 3;
         }
   
         .bar {
           fill: none;
-          stroke: #ff5e57;
+          stroke: #E63946;
           stroke-width: 3;
           stroke-linecap: round;
           stroke-dasharray: 0 100;
@@ -37,7 +37,7 @@
         }
   
         .percentage-text {
-          fill: #ff5e57;
+          fill: #E63946;
           font-size: 0.3rem;
           text-anchor: middle;
           dominant-baseline: middle;
@@ -56,7 +56,7 @@
   
     .progress-circle:hover {
       transform: scale(1.1);
-      box-shadow: 0 0 10px #ff5e57;
+      box-shadow: 0 0 10px #D62828;
     }
   
     .skill-label {

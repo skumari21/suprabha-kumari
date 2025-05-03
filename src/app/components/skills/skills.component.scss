@@ -1,12 +1,12 @@
 .skills-wrapper {
   padding: 40px 20px;
-  color: #fff;
+  color: #1E1E1E;
 
   h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
     text-align: center;
-    border-bottom: 2px solid #444;
+    border-bottom: 2px solid #DDDDDD;
     padding-bottom: 0.5rem;
   }
 
@@ -67,6 +67,7 @@
 }
 
 .tag:hover {
-  background-color: #ff5e57;
+  background-color: #D62828;
+  border: 1px solid #D62828;
   cursor: pointer;
 }
