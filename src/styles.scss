@@ -1,14 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
-body,
-html {
+/* GLOBAL STYLES */
+html,
+body {
     background-color: #F9F9F9;
     color: #f0f0f0;
     margin: 0;
-    height: 100%;
     padding: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 100vw;
+    // overflow-x: hidden;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
+/* Inherit box-sizing for all elements */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Typography */
 h1,
 h2,
 h3,
@@ -16,10 +26,14 @@ h4,
 h5,
 h6 {
     font-family: "Roboto", sans-serif;
+    word-wrap: break-word;
+    max-width: 100%;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
+    word-wrap: break-word;
+    max-width: 100%;
 }
 
 div,
@@ -32,12 +46,29 @@ button {
     font-family: Verdana, sans-serif;
 }
 
+/* Wrapper for full-page layout */
 .app-wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
+/* Full-width sections */
+.section {
+    width: 100vw;
+    padding: 40px 20px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/* Responsive media */
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Universal button */
 .universal-btn {
     background: #E63946;
     color: white;
@@ -47,12 +78,13 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease;
-  }
-  
-  .universal-btn:hover {
-    background: #d12f3c;
-  }
+}
 
+.universal-btn:hover {
+    background: #d12f3c;
+}
+
+/* Back to top */
 .back-to-top {
     position: fixed;
     bottom: 30px;
@@ -67,10 +99,47 @@ button {
     box-shadow: 0 4px 12px #D62828;
     transition: all 0.3s ease;
     z-index: 999;
+}
 
-    &:hover {
-        background-color: #fff;
-        color: #444;
-        transform: scale(1.1);
+.back-to-top:hover {
+    background-color: #fff;
+    color: #444;
+    transform: scale(1.1);
+}
+
+/* FLEX UTILITY (for layouts like nav, cards, etc.) */
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* RESPONSIVE TWEAKS */
+@media (max-width: 768px) {
+    .section {
+        padding: 30px 15px;
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: 20px 10px;
+    }
+
+    h1, h2 {
+        font-size: 1.3em;
+    }
+
+    p {
+        font-size: 0.9rem;
     }
 }
