@@ -13,7 +13,7 @@ import { CertificatesComponent } from "../certificates/certificates.component";
 export class HeaderComponent {
   showContactModal = false;
   showCerts = false;
-  isMobileMenuOpen = false;
+  isMenuOpen = false;
   constructor(private router: Router, @Inject(DOCUMENT) private document: Document) {}
 
 
@@ -23,7 +23,7 @@ export class HeaderComponent {
     });
   }
   toggleMobileMenu() {
-    this.isMobileMenuOpen = !this.isMobileMenuOpen;
+    this.isMenuOpen = !this.isMenuOpen;
   }
 
 
