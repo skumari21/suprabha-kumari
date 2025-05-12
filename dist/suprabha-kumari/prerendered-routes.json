@@ -1,6 +1,6 @@
 {
   "routes": {
-    "/suprabha-kumari": {},
-    "/suprabha-kumari/home": {}
+    "/": {},
+    "/home": {}
   }
 }
