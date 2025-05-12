@@ -45,16 +45,21 @@
 }
 
 .details {
-  margin: 15px 200px;
+  display: flex;
+  justify-content: center;
+  margin: 15px auto;
   font-family: Arial, sans-serif;
   color: #333;
+  width: 100%; 
 }
 
 .tags {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+  justify-content: center; 
 }
+
 
 .tag {
   background-color:#444;
