@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { Component, Inject } from '@angular/core';
+import { CommonModule, DOCUMENT } from '@angular/common';
+import { Router, RouterModule } from '@angular/router';
 import { CertificatesComponent } from "../certificates/certificates.component";
 
 
@@ -14,7 +14,14 @@ export class HeaderComponent {
   showContactModal = false;
   showCerts = false;
   isMobileMenuOpen = false;
+  constructor(private router: Router, @Inject(DOCUMENT) private document: Document) {}
 
+
+  refreshPage(): void {
+    this.router.navigate(['/']).then(() => {
+      this.document.location.reload(); // Use document.location for consistency
+    });
+  }
   toggleMobileMenu() {
     this.isMobileMenuOpen = !this.isMobileMenuOpen;
   }
@@ -34,5 +41,5 @@ export class HeaderComponent {
   closeCerts() {
     this.showCerts = false;
   }
- 
+
 }
