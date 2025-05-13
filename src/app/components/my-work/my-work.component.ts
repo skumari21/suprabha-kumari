@@ -13,7 +13,6 @@ export class MyWorkComponent {
   ecovision = 'Participated in Ecovision, a national case competition by IIM Shillong, focused on crafting strategic recommendations for a company aiming to adopt sustainable packaging solutions. The challenge was to balance environmental impact with cost-effectiveness and brand positioning.';
   ecovisionProblemStatement = 'assets/projects/case-ecovision.pdf';
   projectLabel = 'Ecovision Problem Statement';
-  ecovisionSolution = 'assets/projects/ecovision_submission_deck.pdf';
   solutionLabel = 'Ecovision Submission Deck';
   ecovisionRole = 'Consultant (Case Competition Participant)';
   ecovisionTools = 'Competitive Benchmarking, Packaging Lifecycle Analysis, Strategic Consulting, Slide Design';
@@ -24,7 +23,6 @@ export class MyWorkComponent {
   ebroOutcome = 'The GTM strategy deck was well-received by the EBRO team and used as a foundational input in their product launch and investor discussions.';
   ebroProblemStatement = '';
   ebroDescription = 'Contributed to the design of a comprehensive Go-To-Market (GTM) strategy for EBRO, a Spanish e-mobility brand launching its flagship electric delivery van. The goal was to define a clear entry and growth plan for the European market, targeting last-mile delivery fleets and eco-conscious B2B buyers.';
-  ebroSolution = 'assets/projects/ebroSubmissionDeck.pptx';
   ebroSolutionLabel = 'Ebro Submission Deck';
   ebroProjectLabel = '';
 

@@ -8,13 +8,4 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule]
 })
 export class ProjectCardComponent {
-  @Input() title: string = '';
-  @Input() description: string = '';
-  @Input() problemStatement: string = '';
-  @Input() solution: string = '';
-  @Input() projectLabel: string = '';
-  @Input() solutionLabel: string = '';
-  @Input() role: string ='';
-  @Input() outcome: string='';
-  @Input() tools: string='';
 }
