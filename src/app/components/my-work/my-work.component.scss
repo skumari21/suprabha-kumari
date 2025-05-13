@@ -1,33 +1,28 @@
+
+/* === Updated my-work.component.scss === */
 .my-work {
   padding: 60px 20px;
-  width: 100%;
+  background: #f9f9f9;
   text-align: center;
-  background: #F9F9F9;
-
-  h2 {
-    color: #1E1E1E;
-    font-size: 2rem;
-    margin-bottom: 40px;
-    border-bottom: 2px solid #DDDDDD;
-    padding-bottom: 8px;
-  }
-
-  .projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    animation: fadeSlideUp 1s ease forwards;
-
-    app-project-card {
-      flex: 1 1 300px;
-      max-width: 350px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-  }
 }
 
-/* Animations */
+.my-work h2 {
+  color: #1e1e1e;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #ddd;
+  letter-spacing: 1px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  animation: fadeSlideUp 1s ease forwards;
+}
+
 @keyframes fadeSlideUp {
   0% {
     opacity: 0;
@@ -39,7 +34,6 @@
   }
 }
 
-/* Responsive tweaks */
 @media (max-width: 768px) {
   .my-work h2 {
     font-size: 1.6rem;
@@ -53,14 +47,10 @@
 @media (max-width: 480px) {
   .my-work {
     padding: 40px 10px;
+  }
 
-    h2 {
-      font-size: 1.4rem;
-    }
-
-    .projects {
-      flex-direction: column;
-      align-items: center;
-    }
+  .projects {
+    flex-direction: column;
+    align-items: center;
   }
 }

@@ -12,7 +12,7 @@
 <div *ngIf="showSlideshow" class="slideshow-backdrop">
   <div class="certificates-panel">
     <img [src]="certificates[currentIndex].full" class="certificate-image" />
-    <div class="mt-4 flex gap-4">
+    <div class="flex gap-4">
       <button (click)="prev()" class="universal-btn" style="margin-right:5px;">← Prev</button>
       <button (click)="next()" class="universal-btn" style="margin-right:5px;">Next →</button>
       <button (click)="closeSlideshow()" class="universal-btn">Back to Gallery</button>
