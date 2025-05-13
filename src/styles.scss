@@ -70,19 +70,67 @@ img, video {
 
 /* Universal button */
 .universal-btn {
-    background: #E63946;
-    color: white;
-    border: none;
-    padding: 0.6rem 1.2rem;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
 }
 
-.universal-btn:hover {
-    background: #d12f3c;
+/* Primary solid button */
+.universal-btn.primary {
+  background: #E63946;
+  color: white;
+  box-shadow: 0 4px 12px rgba(230, 57, 70, 0.3);
 }
+
+.universal-btn.primary:hover {
+  background: #d62828;
+  box-shadow: 0 6px 16px rgba(214, 40, 40, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Ghost (outlined) button for secondary actions */
+.universal-btn.ghost {
+  background: transparent;
+  color: #E63946;
+  border: 2px solid #E63946;
+}
+
+.universal-btn.ghost:hover {
+  background: #E63946;
+  color: white;
+  box-shadow: 0 4px 10px rgba(230, 57, 70, 0.2);
+  transform: translateY(-2px);
+}
+.universal-btn i {
+  transition: transform 0.3s ease;
+}
+
+.universal-btn:hover i {
+  transform: scale(1.1);
+}
+.secondary-btn {
+  background: transparent;
+  color: #E63946;
+  border: 2px solid #E63946;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background: #E63946;
+  color: white;
+}
+
 
 /* Back to top */
 .back-to-top {
