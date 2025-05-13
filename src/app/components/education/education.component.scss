@@ -47,7 +47,7 @@
         background: #ffffff;
         padding: 1rem;
         border-radius: 0.5rem;
-        box-shadow: 0 0 10px rgb(255, 94, 87);
+        box-shadow: 0 0 10px rgba(230, 57, 70, 0.3);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
 
         h3 {
@@ -69,8 +69,8 @@
         }
 
         &:hover {
-          transform: translateY(-5px) scale(1.02);
-          box-shadow: 0 8px 20px #E63946;
+          transform: translateY(-5px) scale(1.01);
+          box-shadow: 0 8px 20px rgba(214, 40, 40, 0.5);
           background-color: #ffffff;
         }
       }
