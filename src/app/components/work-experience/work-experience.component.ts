@@ -11,6 +11,17 @@ import { ContactComponent } from "../contact/contact.component";
 })
 export class WorkExperienceComponent {
   experiences = [
+     {
+      company: 'Infosys Finacle',
+      role: 'Consultant',
+      duration: 'May 19 — Present',
+      responsibilities: [
+        'Interacting with banking clients to understand business and technical requirements.',
+        'Designing solutions involving Finacle’s cloud and infrastructure stack.',
+        'Assisting with cost optimization, performance tuning, and compliance in cloud setups.',
+        'Identifying opportunities for automation in Finacle infrastructure management.'
+      ]
+    },
     {
       company: 'Infosys Limited',
       role: 'Technology Analyst (Full Stack Software Developer)',
