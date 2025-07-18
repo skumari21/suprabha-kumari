@@ -16,10 +16,10 @@ export class WorkExperienceComponent {
       role: 'Consultant',
       duration: 'May 19 — Present',
       responsibilities: [
-        'Interacting with banking clients to understand business and technical requirements.',
-        'Designing solutions involving Finacle’s cloud and infrastructure stack.',
-        'Assisting with cost optimization, performance tuning, and compliance in cloud setups.',
-        'Identifying opportunities for automation in Finacle infrastructure management.'
+        'Developed a strategic vision presentation for top global retail banks, aligning OKRs, KPIs, and enablers to support executive decision-making.',
+        'Created a capabilities report for 49 Finacle products, highlighting features and value to aid leadership in business development.',
+        'Designed a Customer 360° and Voice of Customer strategy deck, enhancing client engagement and streamlining omni-channel operations.',
+        'Oversaw Finacle environment management—system updates, patching, test data, and access controls—to ensure operational continuity.'
       ]
     },
     {
