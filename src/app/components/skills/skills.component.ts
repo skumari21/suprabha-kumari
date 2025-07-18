@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
 })
 export class SkillsComponent {
   skills = [
-    { name: 'Executive communication (storyboarding, C-level presentations)', percent: 100, icon: 'assets/icons/data-dev.svg' },
+    { name: 'Executive communication', percent: 100, icon: 'assets/icons/data-dev.svg' },
     { name: 'Business Strategy & Consulting', percent: 75, icon: 'assets/icons/strategy.svg' },
     { name: 'Data-Driven Decision-Making', percent: 55, icon: 'assets/icons/product.svg' },
     { name: 'Product Management', percent: 75, icon: 'assets/icons/data-config.svg' },
