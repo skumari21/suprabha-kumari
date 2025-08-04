@@ -14,7 +14,7 @@ export class WorkExperienceComponent {
      {
       company: 'Infosys Finacle',
       role: 'Consultant',
-      duration: 'May 19 — Present',
+      duration: 'May 25 — Present',
       responsibilities: [
         'Developed a strategic vision presentation for top global retail banks, aligning OKRs, KPIs, and enablers to support executive decision-making.',
         'Created a capabilities report for 49 Finacle products, highlighting features and value to aid leadership in business development.',
