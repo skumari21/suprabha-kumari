@@ -16,10 +16,10 @@ export class WorkExperienceComponent {
       role: 'Consultant',
       duration: 'May 25 — Present',
       responsibilities: [
-        'Developed a strategic vision presentation for top global retail banks, aligning OKRs, KPIs, and enablers to support executive decision-making.',
-        'Created a capabilities report for 49 Finacle products, highlighting features and value to aid leadership in business development.',
-        'Designed a Customer 360° and Voice of Customer strategy deck, enhancing client engagement and streamlining omni-channel operations.',
-        'Oversaw Finacle environment management—system updates, patching, test data, and access controls—to ensure operational continuity.'
+        'Provide consulting support on payments and retail banking processes, helping clients optimize workflows and enhance customer experience.',
+        'Contribute to internal methodology development and capability-building, promoting innovative approaches in payments and retail banking consulting.',
+        'Conduct stakeholder workshops and knowledge sessions, bridging business and technology teams to align on solution strategy.',
+        'Drive end-to-end documentation, including functional specifications, process flows, and business requirement documents for digital banking initiatives.'
       ]
     },
     {
