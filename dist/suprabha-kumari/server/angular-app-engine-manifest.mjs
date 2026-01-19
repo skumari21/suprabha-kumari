@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/',
+  basePath: 'https://skumari21.github.io/suprabha-kumari',
   supportedLocales: {
   "en-US": ""
 },
